@@ -1,0 +1,134 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22028271969,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initialisingbrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Search for book and add a product to basket from search results.",
+        "description": "",
+        "id": "search-for-a-product-and-add-to-cart;search-for-book-and-add-a-product-to-basket-from-search-results.",
+        "after": [
+          {
+            "result": {
+              "duration": 136498,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closingBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9521425529,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ProductSearch.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2489343426,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I search for a product \"book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "book",
+                  "offset": 24
+                }
+              ],
+              "location": "ProductSearch.iSearchForAProduct(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4212029250,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on search results page",
+            "match": {
+              "location": "ProductSearch.iAmOnSearchResultsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3377493265,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on product from search results",
+            "match": {
+              "location": "ProductSearch.iClickOnAnyProductFromSearchResults()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5266352790,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to Product page",
+            "match": {
+              "location": "ProductSearch.iNavigateToProductPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 468189352,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click on Add to cart button",
+            "match": {
+              "location": "ProductSearch.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2776017960,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify product is added to cart",
+            "match": {
+              "location": "ProductSearch.verifyProductIsAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search for a product and Add to cart",
+    "description": "",
+    "id": "search-for-a-product-and-add-to-cart",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
